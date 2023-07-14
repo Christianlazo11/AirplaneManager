@@ -1,14 +1,17 @@
 package org.example.Gate;
 
-import org.example.Airplane.Airplane;
 
 import java.util.ArrayList;
 
 public interface GateInterface {
 
-    void addAirplane(String idGate, String idAirplane);
-    void deleteAirplane(String idGate);
-    ArrayList<Gate> getAllGates();
-    ArrayList<Gate> getAvaibilityGates();
+  void addAirplane(int gateNumber, String idAirplane) throws Exception;
 
+  void deleteAirplane(String idGate);
+
+  Gate search(int gateNumber);
+
+  ArrayList<Gate> getAllGates();
+
+  ArrayList<Gate> getAvaibilityGates();
 }

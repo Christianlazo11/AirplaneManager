@@ -1,1 +1,1 @@
-![img.png](img.png)
+![](Digrama_Airplane.png)
