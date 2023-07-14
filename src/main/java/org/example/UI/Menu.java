@@ -38,7 +38,7 @@ public abstract class Menu {
         if(option == 1) {
             MenuAirplaneManager.showMenuAirplane();
         } else if (option == 2) {
-
+            MenuGateManager.showMenu();
         } else if (option == 3) {
             System.out.printf("%77s%n", "-".repeat(77));
             System.out.println("🖐🖐🖐🖐🖐🖐🖐🖐🖐🖐");

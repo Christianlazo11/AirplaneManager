@@ -51,6 +51,19 @@ public class AirplaneManager implements AirplaneInterface{
         return null;
     }
 
+    @Override
+    public ArrayList<Airplane> getAvaibilityAirplanes() {
+        ArrayList<Airplane> result = new ArrayList<>();
+
+        for(Airplane air : airplanes) {
+            if(air.getIdGate().isEmpty()){
+                result.add(air);
+            }
+        }
+
+        return result;
+    }
+
     public ArrayList<Airplane> getAirplanes() {
         return airplanes;
     }

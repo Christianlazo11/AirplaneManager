@@ -1,5 +1,7 @@
 package org.example.Airplane;
 
+import java.util.ArrayList;
+
 public interface AirplaneInterface {
 
     void create(Airplane airplane);
@@ -8,4 +10,5 @@ public interface AirplaneInterface {
 
     Airplane search(String id);
 
+    ArrayList<Airplane> getAvaibilityAirplanes();
 }
